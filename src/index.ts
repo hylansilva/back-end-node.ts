@@ -1,6 +1,6 @@
-import express, { Request, Response, Router} from 'express';
+import 'reflect-metadata'
+import express, { Request, Response} from 'express';
 import { router } from './routes';
-
 const server = express();
 
 server.use(express.json());

@@ -12,7 +12,7 @@ describe('UserService', ()=>{
 
     it('deve deletar todos os usuários',()=>{
         const mockConsole = jest.spyOn(global.console,'log');
-        userService.deleteAllUsers();
-        expect(mockConsole).toHaveBeenCalledWith('usuários deletados!')
+        userService.deleteUser();
+        expect(mockConsole).toHaveBeenCalledWith('Usuário deletado!')
     })
 });

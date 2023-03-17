@@ -32,8 +32,8 @@ export class UserService{
         return this.db
     }
 
-    deleteAllUsers = () =>{
-        this.db = []
-        console.log('usuários deletados!')
+    deleteUser = () =>{
+        console.log('Usuário deletado!')
+        return this.db.pop();
     }
 }
